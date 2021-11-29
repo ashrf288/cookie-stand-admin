@@ -18,16 +18,18 @@ export default function Home() {
    console.log(stands)
   }
   return (
-    <div className=" bg-green-100 flex flex-col items-center justify-center min-h-screen py-2">
+    <div className=" bg-green-100 flex flex-col items-center 		 min-h-screen py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className=" bg-green-500  w-screen p-0 absolute top-0 text-4xl font-bold  ">
+
+        <main className="bg-green-100 align-middle w-screen  ">
+        <header className=" bg-green-500  w-screen p-0 absolute top-0 text-4xl font-bold  ">
         <h1 className=" text-black  p-4 ">Cookie Stand Admin</h1>
       </header>
-        <main className="bg-green-100 align-middle w-screen  ">
-          <form className="bg-green-400 flex flex-col   w-4/5 p-4   m-auto place-items-center  gap-5 rounded-lg  ">
+      <div className=' my-36'>
+          <form className="bg-green-400 flex flex-col   w-4/5 p-4    m-auto  place-items-center  gap-5 rounded-lg  ">
             <h2 className=" text-black  p-4  "> Create Cookie Stand</h2>
             <div className="items-stretch w-full">
               <label>location : </label>
@@ -84,18 +86,20 @@ export default function Home() {
             </div>
           </form>
           
-
-        </main>
-        <section>
+          <section  className='mt-4 text-center'>
         {stands.map((stand,index)=>{
               return <p key={index} >{JSON.stringify(stand)}</p>
             })}
         </section>
+        </div>
+        </main>
 
 
-      <footer className=" bg-green-500  w-screen p-0 absolute bottom-0  font-bold ">
+       
+      <footer className=" bg-green-500  w-screen p-0  bottom-0  font-bold mt-32 h-12 flex items-start  ">
         {" "}
-        &copy; 2021
+        <h4 className = 'p-3'> &copy; 2021</h4>
+       
       </footer>
     </div>
   );
