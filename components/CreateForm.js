@@ -8,7 +8,7 @@ export default function CreateForm(props) {
       average:e.target.avergae.value,
       MinCustomer:e.target.MinCustomer.value,
       MaxCustomer:e.target.MaxCustomer.value,
-      hourly_sales:[48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]
+      hourly_sales:[48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36 ,516]
         }
         props.updateStand(stand)
       }

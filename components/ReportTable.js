@@ -2,7 +2,7 @@
 import React ,{useState ,useEffect} from "react";
 
 function ReportTable(props) {
-    const [totals, settotals] = useState([48,42,30,24,42,24,36,42,42,48,36,42,24,36])
+    const [totals, settotals] = useState([48,42,30,24,42,24,36,42,42,48,36,42,24,36,516])
 
     useEffect(() => {
         if (props.data.length >1){
