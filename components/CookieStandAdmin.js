@@ -4,7 +4,7 @@ import Main from "../components/Main";
 import Footer from "../components/Footer";
 import React, { useState, useEffect } from "react";
 import LoginForm from "../components/LoginForm.js"
-import useResource, {createResource} from '../hooks.js/useResource';
+import useResource  from '../hooks.js/useResource';
 import { useAuth } from '../contexts/auth'
 
 export default function CookieStandAdmin() {
@@ -25,7 +25,7 @@ export default function CookieStandAdmin() {
         {user ? (
              <Main data={stands} updateStand={updateStand} />
         ) : (
-          <div className='m-auto mx-12 my-64 font-bold text-center'>
+          <div className='m-auto mx-12 font-bold text-center my-36'>
              <LoginForm/>        
           </div>
 

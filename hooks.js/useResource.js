@@ -1,7 +1,7 @@
 import axios from 'axios'
 import useSWR from 'swr'
 
-export const apiUrl = process.env.NEXT_PUBLIC_RESOURCE_URL;
+export const apiUrl = process.env.NEXT_PUBLIC_API_URL+'/api/v1/cookie_stands/';
 import { useAuth } from '../contexts/auth'
 
 export default function useResource() {
@@ -75,6 +75,7 @@ export default function useResource() {
         resources: data,
         error,
         loading: tokens && !error && !data,
+        fetchResource,
         createResource,
         deleteResource,
         updateResource,
