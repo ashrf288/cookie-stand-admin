@@ -50,6 +50,12 @@ export default function useResource() {
     async function updateResource(resource) {
         // STRETCH
         // Add ability for user to update an existing resource
+        try{
+        let stand= await axios.put(`${apiUrl}${id}/`,info, config())
+        console.log(stand);
+        }catch(e){
+            console.log(e);
+        }
     }
 
 
